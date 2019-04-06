@@ -23,7 +23,7 @@ cacheSolve <- function(x, ...) {
   i <- x$getInv()
   if (!is.null(i)) {
     print("Getting inverse from cache")
-    i
+    return (i)
   }
   data <- x$get()
   i <- solve(data, ...)
